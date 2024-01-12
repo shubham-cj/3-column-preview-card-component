@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+main div {
+    height: 370px;
+    width: 300px;
+    padding: 40px;
+    font-size: 15px;
+    color: hsl(0, 0%, 95%);
+}
+main div:nth-child(1) {
+    background: hsl(31, 77%, 52%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: 50px;
+}
+main div:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+}
+main div:nth-child(3) {
+    background: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+}
+main h1 {
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+main p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 15px 0;
+}
+main button {
+    background: hsl(0, 0%, 95%);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+main button:hover {
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+    }
+    
+    main {
+        flex-direction: row;
+    }
+    main div:nth-child(1) {
+        background: hsl(31, 77%, 52%);
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin: 0;
+    }
+    main div:nth-child(3) {
+        background: hsl(179, 100%, 13%);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        margin: 0;
+    }
+}
